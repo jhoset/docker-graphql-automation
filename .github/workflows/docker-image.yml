@@ -27,9 +27,11 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t dngdev/docker-graphql-automation:0.0.1 .
+        docker build -t dngdev/docker-graphql-automation:latest .
     - name: Push Docker Image
       run: |
         docker push dngdev/docker-graphql-automation:0.0.1
+        docker push dngdev/docker-graphql-automation:latest
         
       
     # - name: Build the Docker image
